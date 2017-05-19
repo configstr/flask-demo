@@ -186,7 +186,7 @@ remote_config = json.loads(
     urlopen(request).read().decode('utf-8')
 ).get('data', {})
 
-WHERE = os.getenv('WHERE', remote_config.get('where'))
+WHERE = os.getenv('WHERE', remote_config.get('WHERE'))
 ```
 
 Restarting your flask application you should now see
